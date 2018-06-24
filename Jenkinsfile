@@ -13,7 +13,7 @@ pipeline {
 	stage ('Compile Stage'){
 	    steps {
 	        withMaven(maven : 'Maven'){
-		    sh 'mvn clean package'
+		    bat 'mvn clean package'
 		}
 	    }
 	}
